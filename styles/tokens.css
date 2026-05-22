@@ -1,0 +1,297 @@
+/* =============================================================
+   Curracloe Rowing Club — Colors & Type
+   Pink, black, white. Wexford coast + River Slaney club identity.
+   ============================================================= */
+
+/* Webfonts — substituted from Google Fonts. See README for sub flags. */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  /* -----------------------------------------------------------
+     COLOR TOKENS — raw scale
+     ----------------------------------------------------------- */
+
+  /* Pink — club jersey, signage, primary action. Brand hex: #d81890 */
+  --crc-pink-50:  #fff0f7;
+  --crc-pink-100: #ffdbed;
+  --crc-pink-200: #ffadd3;
+  --crc-pink-300: #ff74b7;
+  --crc-pink-400: #ef4ba9;   /* hover */
+  --crc-pink-500: #d81890;   /* PRIMARY — club pink */
+  --crc-pink-600: #b41074;   /* pressed */
+  --crc-pink-700: #850a56;
+  --crc-pink-800: #560636;
+  --crc-pink-900: #2f0320;
+
+  /* Ink — near-black, slightly warm */
+  --crc-ink-50:   #f4f3f1;
+  --crc-ink-100:  #e6e4e0;
+  --crc-ink-200:  #cdcac4;
+  --crc-ink-300:  #a8a39b;
+  --crc-ink-400:  #6f6a62;
+  --crc-ink-500:  #3d3a35;
+  --crc-ink-700:  #25231f;
+  --crc-ink-900:  #131210;   /* black */
+
+  /* Paper — white + warm cream for variety */
+  --crc-paper:    #ffffff;
+  --crc-paper-2:  #faf7f2;   /* warm cream, beach sand */
+  --crc-paper-3:  #f1ede4;   /* deeper sand */
+
+  /* Semantic */
+  --crc-success:  #2f8f5a;   /* finish-line green, used sparingly */
+  --crc-warning:  #d68a1a;   /* tide/safety */
+  --crc-danger:   #c4283a;   /* withdraw / DNF */
+  --crc-info:     #2c5e8a;   /* river blue, used very sparingly */
+
+  /* -----------------------------------------------------------
+     SEMANTIC COLOR ROLES
+     ----------------------------------------------------------- */
+  --crc-fg:           var(--crc-ink-900);
+  --crc-fg-muted:     var(--crc-ink-500);
+  --crc-fg-subtle:    var(--crc-ink-400);
+  --crc-fg-on-pink:   var(--crc-paper);
+  --crc-fg-on-ink:    var(--crc-paper);
+
+  --crc-bg:           var(--crc-paper);
+  --crc-bg-elev:      var(--crc-paper-2);
+  --crc-bg-sunken:    var(--crc-paper-3);
+  --crc-bg-ink:       var(--crc-ink-900);
+  --crc-bg-pink:      var(--crc-pink-500);
+
+  --crc-border:       var(--crc-ink-100);
+  --crc-border-strong:var(--crc-ink-900);
+  --crc-divider:      var(--crc-ink-200);
+
+  --crc-accent:       var(--crc-pink-500);
+  --crc-accent-hover: var(--crc-pink-400);
+  --crc-accent-press: var(--crc-pink-600);
+
+  /* -----------------------------------------------------------
+     TYPE — families
+     ----------------------------------------------------------- */
+  --crc-font-display: "Anton", "Oswald", "Impact", sans-serif;
+  --crc-font-sans:    "Familjen Grotesk", "Helvetica Neue", system-ui, sans-serif;
+  --crc-font-serif:   "Newsreader", "Source Serif Pro", Georgia, serif;
+  --crc-font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Type — weights */
+  --crc-w-regular: 400;
+  --crc-w-medium:  500;
+  --crc-w-bold:    700;
+
+  /* Type — scale (px-based, fluid via clamp at section level) */
+  --crc-fs-xs:   12px;
+  --crc-fs-sm:   14px;
+  --crc-fs-base: 16px;
+  --crc-fs-md:   18px;
+  --crc-fs-lg:   22px;
+  --crc-fs-xl:   28px;
+  --crc-fs-2xl:  36px;
+  --crc-fs-3xl:  48px;
+  --crc-fs-4xl:  64px;
+  --crc-fs-5xl:  96px;
+  --crc-fs-6xl:  140px;
+
+  /* Line heights */
+  --crc-lh-tight:   1.05;
+  --crc-lh-snug:    1.2;
+  --crc-lh-normal:  1.5;
+  --crc-lh-loose:   1.7;
+
+  /* Tracking */
+  --crc-tr-tight:   -0.02em;
+  --crc-tr-normal:  0;
+  --crc-tr-wide:    0.08em;
+  --crc-tr-wider:   0.16em;
+
+  /* -----------------------------------------------------------
+     SPACING & RADII
+     ----------------------------------------------------------- */
+  --crc-space-1: 4px;
+  --crc-space-2: 8px;
+  --crc-space-3: 12px;
+  --crc-space-4: 16px;
+  --crc-space-5: 24px;
+  --crc-space-6: 32px;
+  --crc-space-7: 48px;
+  --crc-space-8: 64px;
+  --crc-space-9: 96px;
+  --crc-space-10: 128px;
+
+  --crc-radius-none: 0;
+  --crc-radius-sm:   2px;
+  --crc-radius-md:   4px;
+  --crc-radius-lg:   8px;
+  --crc-radius-pill: 999px;
+
+  /* Shadows — restrained; club identity favors flat + hard edges */
+  --crc-shadow-sm: 0 1px 2px rgba(19, 18, 16, 0.06);
+  --crc-shadow-md: 0 4px 16px -4px rgba(19, 18, 16, 0.10);
+  --crc-shadow-lg: 0 18px 40px -16px rgba(19, 18, 16, 0.22);
+  --crc-shadow-pink: 0 8px 24px -10px rgba(216, 24, 144, 0.45);
+
+  /* Border weights */
+  --crc-border-thin: 1px;
+  --crc-border-med:  2px;
+  --crc-border-thick:3px;
+
+  /* Motion */
+  --crc-ease:     cubic-bezier(0.2, 0.7, 0.2, 1);
+  --crc-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --crc-dur-fast: 120ms;
+  --crc-dur-med:  220ms;
+  --crc-dur-slow: 420ms;
+}
+
+/* =============================================================
+   SEMANTIC TYPE STYLES
+   Apply as classes, or use the element selectors below.
+   ============================================================= */
+
+html, body {
+  font-family: var(--crc-font-sans);
+  font-size: var(--crc-fs-base);
+  line-height: var(--crc-lh-normal);
+  color: var(--crc-fg);
+  background: var(--crc-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display — race banner / hero. Anton, all caps, condensed. */
+.crc-display, .crc-h-hero {
+  font-family: var(--crc-font-display);
+  font-weight: 400;
+  font-size: clamp(64px, 11vw, 140px);
+  line-height: 0.92;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+  color: var(--crc-fg);
+}
+
+/* H1 — page title */
+.crc-h1, h1 {
+  font-family: var(--crc-font-sans);
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: var(--crc-lh-tight);
+  letter-spacing: var(--crc-tr-tight);
+  color: var(--crc-fg);
+  text-wrap: balance;
+}
+
+/* H2 — section title */
+.crc-h2, h2 {
+  font-family: var(--crc-font-sans);
+  font-weight: 700;
+  font-size: clamp(28px, 3.2vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+/* H3 — sub-section */
+.crc-h3, h3 {
+  font-family: var(--crc-font-sans);
+  font-weight: 700;
+  font-size: var(--crc-fs-xl);
+  line-height: var(--crc-lh-snug);
+  letter-spacing: -0.01em;
+}
+
+/* H4 — card title */
+.crc-h4, h4 {
+  font-family: var(--crc-font-sans);
+  font-weight: 700;
+  font-size: var(--crc-fs-lg);
+  line-height: var(--crc-lh-snug);
+}
+
+/* Eyebrow — caps tracking, sits above headings. Club signature. */
+.crc-eyebrow {
+  font-family: var(--crc-font-sans);
+  font-weight: 700;
+  font-size: var(--crc-fs-xs);
+  line-height: 1;
+  letter-spacing: var(--crc-tr-wider);
+  text-transform: uppercase;
+  color: var(--crc-accent);
+}
+
+/* Editorial serif — used for race results, quotes, names of winners */
+.crc-serif, .crc-editorial {
+  font-family: var(--crc-font-serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--crc-fs-lg);
+  line-height: var(--crc-lh-snug);
+  color: var(--crc-fg);
+}
+
+/* Lead — first paragraph */
+.crc-lead, p.lead {
+  font-family: var(--crc-font-sans);
+  font-weight: 400;
+  font-size: var(--crc-fs-md);
+  line-height: var(--crc-lh-normal);
+  color: var(--crc-fg);
+}
+
+/* Body */
+.crc-body, p {
+  font-family: var(--crc-font-sans);
+  font-weight: 400;
+  font-size: var(--crc-fs-base);
+  line-height: var(--crc-lh-normal);
+  color: var(--crc-fg);
+  text-wrap: pretty;
+}
+
+/* Small */
+.crc-small, small {
+  font-family: var(--crc-font-sans);
+  font-size: var(--crc-fs-sm);
+  line-height: var(--crc-lh-normal);
+  color: var(--crc-fg-muted);
+}
+
+/* Caption — bylines, photo credits */
+.crc-caption {
+  font-family: var(--crc-font-sans);
+  font-size: var(--crc-fs-xs);
+  line-height: var(--crc-lh-snug);
+  letter-spacing: var(--crc-tr-wide);
+  text-transform: uppercase;
+  color: var(--crc-fg-muted);
+}
+
+/* Stat — for erg times, splits, race results */
+.crc-stat {
+  font-family: var(--crc-font-mono);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--crc-fs-xl);
+  line-height: 1;
+  color: var(--crc-fg);
+}
+
+/* Code / mono */
+.crc-code, code, kbd {
+  font-family: var(--crc-font-mono);
+  font-size: 0.92em;
+  background: var(--crc-bg-sunken);
+  padding: 2px 6px;
+  border-radius: var(--crc-radius-sm);
+}
+
+/* Link */
+a.crc-link, .crc-prose a {
+  color: var(--crc-fg);
+  text-decoration: underline;
+  text-decoration-color: var(--crc-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--crc-dur-fast) var(--crc-ease);
+}
+a.crc-link:hover, .crc-prose a:hover { text-decoration-color: var(--crc-fg); }

@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Curracloe Rowing Club</title>
+    <meta
+      name="description"
+      content="Curracloe Rowing Club — a community rowing club on three surfaces in Co. Wexford. River, coast, indoor. Founded 2024."
+    />
+    <link rel="stylesheet" href="../styles/tokens.css" />
+    <link rel="stylesheet" href="../styles/site.css" />
+    <link rel="icon" type="image/png" href="../assets/crc-logo-web.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Curracloe Rowing Club — home"
+        >
+          <img class="brand__mark" src="../assets/crc-logo-web.png" alt="" />
+          <span class="brand__wordmark"
+            >CURRACLOE<small>Rowing Club · Co. Wexford</small></span
+          >
+        </a>
+        <nav class="nav" data-nav aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="./about.html" class="is-active">About</a>
+          <a href="./news.html">News</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="site-header__cta">
+          <div class="header-socials" aria-label="Social media">
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13.5 21v-7.5h2.5l.4-3.1h-2.9V8.4c0-.9.25-1.5 1.55-1.5H16.5V4.1c-.3-.05-1.3-.15-2.5-.15-2.5 0-4.2 1.55-4.2 4.4v2.05H7.2v3.1h2.6V21h3.7z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="0.6"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="./contact.html"
+            >Visit the boathouse</a
+          >
+          <a class="btn btn--primary btn--sm" href="../index.html#signup"
+            ><span>Join the newsletter</span
+            ><span class="btn__arrow" aria-hidden="true">→</span></a
+          >
+          <button
+            class="nav-toggle"
+            data-nav-toggle
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg
+              width="18"
+              height="14"
+              viewBox="0 0 18 14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="1" y1="1" x2="17" y2="1" />
+              <line x1="1" y1="7" x2="17" y2="7" />
+              <line x1="1" y1="13" x2="17" y2="13" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================================
+     Page head
+     ============================================================ -->
+    <section class="page-head" data-screen-label="About hero">
+      <div class="container">
+        <span class="eyebrow">About the club</span>
+        <h1>
+          A community rowing club,<br />on three surfaces, in one corner of
+          Wexford.
+        </h1>
+        <p class="page-head__kicker">
+          Founded in 2024 by a small group of beach- and river-rowers. We run a
+          year-round programme for ages 12 to 70+ — river, coast, and the indoor
+          erg shed.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Story + Coaches
+     ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-prose">
+            <p>
+              Curracloe Rowing Club rows on three surfaces — the River Slaney,
+              the open coast at Curracloe and Ballinesker beaches, and the
+              indoor erg shed when the weather closes in. Membership runs from
+              children to senior masters competitors; there's a boat and a
+              session for everyone.
+            </p>
+            <p>
+              We send delegations to the Irish Indoor Rowing Championships in
+              Limerick every winter, race the Slaney through the summer, and put
+              on the 24-Hour Rowathon for local charities each February. We
+              compete proudly across the country and punch well above our weight
+              on the podium — but the club is built first and foremost on
+              showing up for each other at six in the morning.
+            </p>
+            <p>
+              We're proudly sponsored by local businesses — chiefly
+              <strong>Kinetic Financial Advice</strong> — which keeps
+              registration fees accessible for every family in the area. Never
+              rowed before? Good. We started somewhere too.
+            </p>
+          </div>
+
+          <aside class="coaches" id="coaches">
+            <span class="eyebrow">Coaches</span>
+            <h3>The people in the launch</h3>
+            <div class="coach">
+              <div class="coach__avatar">CW</div>
+              <div>
+                <div class="coach__name">Coach Walsh</div>
+                <div class="coach__role">Head coach · Indoor &amp; Senior</div>
+              </div>
+            </div>
+            <div class="coach">
+              <div class="coach__avatar">MC</div>
+              <div>
+                <div class="coach__name">Maeve Carey</div>
+                <div class="coach__role">River — Slaney</div>
+              </div>
+            </div>
+            <div class="coach">
+              <div class="coach__avatar">DF</div>
+              <div>
+                <div class="coach__name">Daithí Foran</div>
+                <div class="coach__role">
+                  Coastal — Curracloe &amp; Ballinesker
+                </div>
+              </div>
+            </div>
+            <div class="coach">
+              <div class="coach__avatar">SM</div>
+              <div>
+                <div class="coach__name">Sinéad Murphy</div>
+                <div class="coach__role">Juniors (12+)</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Three surfaces — deep dive
+     ============================================================ -->
+    <section class="section section--paper2">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Programmes</span>
+          <h2>There's a boat for everyone</h2>
+          <p>
+            Whatever your age and whatever the season — we've a session for you.
+          </p>
+        </div>
+        <div class="grid-4">
+          <article class="prog-card" id="river">
+            <div class="prog-card__icon" aria-hidden="true">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+                <path d="M2 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+                <path d="M2 6c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+              </svg>
+            </div>
+            <h4>River — Slaney</h4>
+            <p>
+              Sculling and sweep on the River Slaney. Year-round, mornings and
+              weekends. Boats provided.
+            </p>
+            <div class="prog-card__sched">SAT · SUN · 07:00</div>
+          </article>
+
+          <article class="prog-card" id="coastal">
+            <div class="prog-card__icon" aria-hidden="true">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21c2-1 4-1 6 0s4 1 6 0 4-1 6 0" />
+                <path d="M5 17l7-12 7 12" />
+                <line x1="12" y1="5" x2="12" y2="17" />
+              </svg>
+            </div>
+            <h4>Coastal</h4>
+            <p>
+              Open-water rowing off Curracloe and Ballinesker beaches.
+              Summer-led, weather-permitting.
+            </p>
+            <div class="prog-card__sched">MAY — SEPT</div>
+          </article>
+
+          <article class="prog-card prog-card--active" id="indoor">
+            <div class="prog-card__icon" aria-hidden="true">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h4>Indoor / Erg</h4>
+            <p>
+              The winter programme. Limerick prep, fitness building, and the
+              24-Hour Rowathon.
+            </p>
+            <div class="prog-card__sched">TUE · THU · 18:30</div>
+          </article>
+
+          <article class="prog-card" id="juniors">
+            <div class="prog-card__icon" aria-hidden="true">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="9" cy="8" r="3" />
+                <circle cx="17" cy="9" r="2" />
+                <path d="M3 20c0-3 3-5 6-5s6 2 6 5" />
+                <path d="M15 20c0-2 2-4 4-4s2.5 1.5 2.5 4" />
+              </svg>
+            </div>
+            <h4>Juniors (12+)</h4>
+            <p>
+              From age 12. Free trial sessions. All gear provided. No experience
+              required.
+            </p>
+            <div class="prog-card__sched">SAT · 10:00</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Club story — timeline
+     ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="eyebrow">Club story</span>
+            <h2
+              style="
+                font-size: clamp(36px, 4.5vw, 56px);
+                line-height: 1.02;
+                letter-spacing: -0.015em;
+                margin: 14px 0 24px;
+              "
+            >
+              From beach-launch to podium, in eighteen months.
+            </h2>
+
+            <ul class="timeline">
+              <li>
+                <span class="timeline__year">2024</span>
+                <div class="timeline__body">
+                  <strong>Founded — May 2024</strong>
+                  <span
+                    >Twelve members. One borrowed eight, two ergs, and a beach
+                    launch at Ballinesker.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="timeline__year">2024</span>
+                <div class="timeline__body">
+                  <strong>First boathouse — October 2024</strong>
+                  <span
+                    >The Slaney Boathouse opens on the Ferrycarrig Road.
+                    Coaching team confirmed. Member count: 48.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="timeline__year">2025</span>
+                <div class="timeline__body">
+                  <strong>Inaugural 24-Hour Rowathon — February 2025</strong>
+                  <span
+                    >€4,820 raised for Relay For Life Wexford and the Irish
+                    Cancer Society.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="timeline__year">2025</span>
+                <div class="timeline__body">
+                  <strong>First Slaney Head race — August 2025</strong>
+                  <span
+                    >Niamh O'Connor takes gold in W Sen 1×; the Open 4× takes
+                    silver.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="timeline__year">2026</span>
+                <div class="timeline__body">
+                  <strong
+                    >Irish Indoor Championships, Limerick — February
+                    2026</strong
+                  >
+                  <span
+                    >Three medals. Aoife Ní Bhriain — gold W MAS D 1×. Jamie
+                    Kelly — silver J18 1×. J16 4× — bronze.</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <aside style="position: sticky; top: 100px">
+            <div
+              style="background: var(--crc-ink-900); color: #fff; padding: 32px"
+            >
+              <span class="eyebrow eyebrow--on-ink">By the numbers</span>
+              <div style="display: grid; gap: 22px; margin-top: 22px">
+                <div>
+                  <div
+                    style="
+                      font-family: var(--crc-font-display);
+                      font-size: 64px;
+                      line-height: 1;
+                    "
+                  >
+                    112
+                  </div>
+                  <div
+                    style="
+                      font-size: 11px;
+                      letter-spacing: 0.18em;
+                      text-transform: uppercase;
+                      color: #ffffffaa;
+                      margin-top: 6px;
+                    "
+                  >
+                    Members on the books
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: var(--crc-font-display);
+                      font-size: 64px;
+                      line-height: 1;
+                      color: var(--crc-pink-300);
+                    "
+                  >
+                    3
+                  </div>
+                  <div
+                    style="
+                      font-size: 11px;
+                      letter-spacing: 0.18em;
+                      text-transform: uppercase;
+                      color: #ffffffaa;
+                      margin-top: 6px;
+                    "
+                  >
+                    Surfaces — river, coast, indoor
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: var(--crc-font-display);
+                      font-size: 64px;
+                      line-height: 1;
+                    "
+                  >
+                    €4,820
+                  </div>
+                  <div
+                    style="
+                      font-size: 11px;
+                      letter-spacing: 0.18em;
+                      text-transform: uppercase;
+                      color: #ffffffaa;
+                      margin-top: 6px;
+                    "
+                  >
+                    Raised for charity in 2025
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  margin-top: 32px;
+                  padding-top: 22px;
+                  border-top: 1px solid #ffffff22;
+                  font-family: var(--crc-font-serif);
+                  font-style: italic;
+                  font-size: 16px;
+                  line-height: 1.5;
+                  color: #ffffffcc;
+                "
+              >
+                "Started with twelve of us on a beach. Now there are queues for
+                the ergs."
+                <div
+                  style="
+                    font-style: normal;
+                    font-family: var(--crc-font-sans);
+                    font-size: 11px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    color: #ffffff88;
+                    margin-top: 10px;
+                  "
+                >
+                  Coach Walsh
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Sponsors
+     ============================================================ -->
+    <section class="sponsors" aria-label="Sponsors">
+      <div class="container">
+        <span class="eyebrow eyebrow--muted">Proudly sponsored by</span>
+        <div class="sponsors__row">
+          <span class="sponsors__item">Kinetic Financial Advice</span>
+          <span class="sponsors__item">Slaney Boatworks</span>
+          <span class="sponsors__item">Wexford Co. Council</span>
+          <span class="sponsors__item">Curracloe Stores</span>
+          <span class="sponsors__item">Ferrycarrig Hotel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter banner -->
+    <aside class="news-banner" aria-label="Newsletter sign-up">
+      <div class="news-banner__inner">
+        <div class="news-banner__left">
+          <div class="news-banner__bolt" aria-hidden="true">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 6h16M4 12h16M4 18h10" />
+            </svg>
+          </div>
+          <div class="news-banner__copy">
+            <strong>The crew list — monthly</strong>
+            <span
+              >Race results, open days, charity totals. First of the
+              month.</span
+            >
+          </div>
+        </div>
+        <form class="news-banner__form" data-newsletter-banner novalidate>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@example.ie"
+            aria-label="Email address"
+            required
+          />
+          <button class="btn btn--primary" type="submit">
+            <span>Subscribe</span
+            ><span class="btn__arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+        <div
+          class="news-banner__msg"
+          data-newsletter-banner-msg
+          role="status"
+          aria-live="polite"
+        ></div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <div class="site-footer__wordmark">CURRACLOE</div>
+          <div class="site-footer__tagline">Rowing Club · Co. Wexford</div>
+          <p>
+            The Slaney Boathouse, Ferrycarrig Road, Wexford Y35&nbsp;XR21. Open
+            every weekend, year-round.
+          </p>
+          <div class="site-footer__social" aria-label="Social media">
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 21v-7.5h2.5l.4-3.1h-2.9V8.4c0-.9.25-1.5 1.55-1.5H16.5V4.1c-.3-.05-1.3-.15-2.5-.15-2.5 0-4.2 1.55-4.2 4.4v2.05H7.2v3.1h2.6V21h3.7z"
+                /></svg
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="0.6"
+                  fill="currentColor"
+                  stroke="none"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="site-footer__col">
+          <h4>Rowing</h4>
+          <ul>
+            <li><a href="./about.html#river">River — Slaney</a></li>
+            <li><a href="./about.html#coastal">Coastal</a></li>
+            <li><a href="./about.html#indoor">Indoor / Erg</a></li>
+            <li><a href="./about.html#juniors">Juniors</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h4>Club</h4>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./about.html#coaches">Coaches</a></li>
+            <li><a href="./news.html">News &amp; results</a></li>
+            <li><a href="./news.html#charity">Charity</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a
+                href="/cdn-cgi/l/email-protection#244d4a424b64475156564547484b41564b534d4a430a4d41"
+                ><span
+                  class="__cf_email__"
+                  data-cfemail="0861666e67486b7d7a7a696b64676d7a677f61666f26616d"
+                  >[email&#160;protected]</span
+                ></a
+              >
+            </li>
+            <li><a href="./contact.html">Visit the boathouse</a></li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span
+          >© <span data-year>2026</span> Curracloe Rowing Club. Reg. Rowing
+          Ireland.</span
+        >
+        <span>Built on the Slaney</span>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="../scripts/site.js"></script>
+  </body>
+</html>
