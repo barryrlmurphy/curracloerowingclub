@@ -524,26 +524,31 @@ a {
 
 /* Mini photo strip below hero */
 .hero__strip {
-  height: clamp(220px, 38vw, 440px);
-  background-image: url('../assets/river-dawn-1.jpg');
+  /* Increased min from 220px to 350px, fluid rate to 45vw, and max to 600px */
+  height: clamp(350px, 45vw, 600px);
+
+  background-image: url(../assets/river-dawn-1.jpg);
   background-size: cover;
-  background-position: center;
-  background-color: #1a1418;
+  background-color: rgb(26, 20, 24);
   position: relative;
   max-width: 1280px;
-  margin: 0 auto;
+  background-position: center center;
+  margin: 0px auto;
+  transition: background-image 0.8s ease-in-out;
 }
 .hero__strip-caption {
   position: absolute;
   left: 32px;
   bottom: 24px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-family: var(--crc-font-sans);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   background: rgba(19, 18, 16, 0.7);
   padding: 6px 12px;
+  /* Optional: Adds a quick fade to the text swap */
+  transition: opacity 0.3s ease;
 }
 
 /* -------------------------------------------------------------
