@@ -98,7 +98,7 @@
       msg.innerHTML =
         '<strong>Message sent</strong>Thanks ' +
         escapeHTML(name.split(' ')[0]) +
-        ' — Coach Walsh or a committee member will reply within 48 hours.';
+        ' — A committee member will reply within 48 hours.';
       msg.style.borderLeftColor = 'var(--crc-pink-500)';
       msg.classList.add('is-visible');
       form.reset();

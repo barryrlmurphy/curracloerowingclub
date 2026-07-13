@@ -527,7 +527,7 @@ a {
   /* Increased min from 220px to 350px, fluid rate to 45vw, and max to 600px */
   height: clamp(350px, 45vw, 600px);
 
-  background-image: url(../assets/river-dawn-1.jpg);
+  background-image: url(../assets/darkness-into-light.jpg);
   background-size: cover;
   background-color: rgb(26, 20, 24);
   position: relative;
