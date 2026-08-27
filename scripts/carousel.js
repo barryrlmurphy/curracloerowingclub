@@ -1,24 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Automatically detects your GitHub repository subdirectory name dynamically
-  const base = window.location.pathname.substring(
-    0,
-    window.location.pathname.indexOf('/', 1) + 1
-  );
+  // 1. Detect your current environment dynamically
+  const isGitHubSubfolder =
+    window.location.hostname.includes('github.io') ||
+    window.location.pathname.startsWith('/curracloerowingclub/');
 
-  // 1. Define your array of slides (images, captions, and alt descriptions)
+  // 2. Set the base path prefix dynamically
+  const basePath = isGitHubSubfolder ? '/curracloerowingclub/' : '/';
+
+  // 3. Build your slides array using that dynamic base path
   const slides = [
     {
-      img: `${base}assets/river-dawn-1.jpg`,
+      img: `${basePath}assets/river-dawn-1.jpg`,
       caption: 'Dawn on the Slaney',
       alt: 'Dawn on the Slaney',
     },
     {
-      img: `${base}assets/curracloe-1.jpg`, // Replace with your actual paths
+      img: `${basePath}assets/curracloe-1.jpg`,
       caption: 'Curracloe Beach',
       alt: 'Curracloe Beach',
     },
     {
-      img: `${base}assets/darkness-into-light.jpg`,
+      img: `${basePath}assets/darkness-into-light.jpg`,
       caption: 'Darkness into Light Event 2026',
       alt: 'Darkness into Light Event 2026',
     },
