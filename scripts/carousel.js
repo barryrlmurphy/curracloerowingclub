@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Detect your current environment dynamically
-  const isGitHubSubfolder =
-    window.location.hostname.includes('github.io') ||
-    window.location.pathname.startsWith('/curracloerowingclub/');
+  // 1. Check your path builder. Make sure it explicitly uses leading slashes:
+  const isGitHubSubfolder = window.location.pathname.startsWith(
+    '/curracloerowingclub/'
+  );
 
-  // 2. Set the base path prefix dynamically
+  // IMPORTANT: Note the leading / before curracloerowingclub
   const basePath = isGitHubSubfolder ? '/curracloerowingclub/' : '/';
 
-  // 3. Build your slides array using that dynamic base path
   const slides = [
     {
-      img: `${basePath}assets/river-dawn-1.jpg`,
+      img: `${basePath}assets/river-dawn-1.jpg`, // Resolves to: /curracloerowingclub/assets/...
       caption: 'Dawn on the Slaney',
       alt: 'Dawn on the Slaney',
     },
