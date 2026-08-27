@@ -1,18 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Automatically detects your GitHub repository subdirectory name dynamically
+  const base = window.location.pathname.substring(
+    0,
+    window.location.pathname.indexOf('/', 1) + 1
+  );
+
   // 1. Define your array of slides (images, captions, and alt descriptions)
   const slides = [
     {
-      img: './assets/river-dawn-1.jpg',
+      img: `${base}assets/river-dawn-1.jpg`,
       caption: 'Dawn on the Slaney',
       alt: 'Dawn on the Slaney',
     },
     {
-      img: './assets/curracloe-1.jpg', // Replace with your actual paths
+      img: `${base}assets/curracloe-1.jpg`, // Replace with your actual paths
       caption: 'Curracloe Beach',
       alt: 'Curracloe Beach',
     },
     {
-      img: './assets/darkness-into-light.jpg',
+      img: `${base}assets/darkness-into-light.jpg`,
       caption: 'Darkness into Light Event 2026',
       alt: 'Darkness into Light Event 2026',
     },
