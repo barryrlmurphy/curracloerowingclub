@@ -2038,6 +2038,9 @@ a {
   .site-header__inner {
     padding: 14px 10px;
   }
+  .page-head {
+    padding: 35px 0 40px;
+  }
 }
 
 /* Article tags / footer */
