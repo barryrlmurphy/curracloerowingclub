@@ -43,7 +43,7 @@
         input.focus();
         return;
       }
-      msg.textContent = "Thanks — you're on the list. See you on the water.";
+      msg.textContent = "Thanks, you're on the list. See you on the water.";
       msg.style.color = '#ffadd3';
       msg.classList.add('is-visible');
       input.value = '';
@@ -70,7 +70,7 @@
       msg.innerHTML =
         "<strong>You're in</strong>Thanks " +
         escapeHTML(name.split(' ')[0]) +
-        ' — next club update lands in your inbox on the first of the month.';
+        ', next club update lands in your inbox on the first of the month.';
       msg.style.borderLeftColor = 'var(--crc-pink-500)';
       msg.classList.add('is-visible');
       form.reset();
@@ -78,30 +78,66 @@
   }
 
   // ---------------- contact ---------------------------------------------
+  // Submits to Formspree so the message actually reaches
+  // curracloerowingclub@gmail.com. Formspree endpoint lives on the
+  // form's action attribute in contact.html.
   function initContact() {
     const form = document.querySelector('[data-contact]');
     if (!form) return;
     const msg = form.querySelector('[data-contact-msg]');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const submitLabel = submitBtn ? submitBtn.querySelector('span') : null;
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+
       const data = new FormData(form);
       const name = (data.get('name') || '').toString().trim();
       const email = (data.get('email') || '').toString().trim();
       const message = (data.get('message') || '').toString().trim();
+
       if (!name || !isEmail(email) || message.length < 8) {
         msg.innerHTML =
-          '<strong>Hold on</strong>Please complete every field — at least a few words in your message.';
+          '<strong>Hold on</strong>Please complete every field, at least a few words in your message.';
         msg.style.borderLeftColor = 'var(--crc-danger)';
         msg.classList.add('is-visible');
         return;
       }
-      msg.innerHTML =
-        '<strong>Message sent</strong>Thanks ' +
-        escapeHTML(name.split(' ')[0]) +
-        ' — A committee member will reply within 48 hours.';
-      msg.style.borderLeftColor = 'var(--crc-pink-500)';
-      msg.classList.add('is-visible');
-      form.reset();
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        if (submitLabel) submitLabel.textContent = 'Sending…';
+      }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('Formspree returned an error status.');
+          }
+          msg.innerHTML =
+            '<strong>Message sent</strong>Thanks ' +
+            escapeHTML(name.split(' ')[0]) +
+            ', we will get back to your as soon as possible.';
+          msg.style.borderLeftColor = 'var(--crc-pink-500)';
+          msg.classList.add('is-visible');
+          form.reset();
+        })
+        .catch(function () {
+          msg.innerHTML =
+            '<strong>Something went wrong</strong>Your message did not send. Please try again, or reach us on social media.';
+          msg.style.borderLeftColor = 'var(--crc-danger)';
+          msg.classList.add('is-visible');
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            if (submitLabel) submitLabel.textContent = 'Send message';
+          }
+        });
     });
   }
 
@@ -172,7 +208,7 @@
     initSignup();
     initContact();
     initNewsFilter();
-    initYearStamp();
     initHeaderScroll();
+    initYearStamp();
   });
 })();
