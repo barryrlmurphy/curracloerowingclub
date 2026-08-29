@@ -366,8 +366,8 @@ a {
   border-color: var(--crc-ink-900);
 }
 .btn--ghost:hover {
-  background: var(--crc-ink-900);
-  color: #fff;
+  color: var(--crc-pink-500);
+  border-color: var(--crc-pink-500);
 }
 
 .btn--inverse {
