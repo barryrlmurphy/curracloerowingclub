@@ -9,9 +9,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const slides = [
     {
-      img: `${basePath}assets/river-dawn-1.jpg`, // Resolves to: /curracloerowingclub/assets/...
-      caption: 'Dawn on the Slaney',
-      alt: 'Dawn on the Slaney',
+      img: `${basePath}assets/darkness-into-light.jpg`,
+      caption: 'Darkness into Light Event 2026',
+      alt: 'Darkness into Light Event 2026',
+    },
+    {
+      img: `${basePath}assets/event-3.JPG`,
+      caption: 'Steph & Ryan',
+      alt: 'Steph & Ryan',
+    },
+    {
+      img: `${basePath}assets/event-2.JPG`,
+      caption: 'Competition Time',
+      alt: 'Competition Time',
+    },
+    {
+      img: `${basePath}assets/gear-2.JPG`,
+      caption: 'New Club Gear',
+      alt: 'New Club Gear',
+    },
+    {
+      img: `${basePath}assets/relay-for-life-1.JPG`,
+      caption: 'Relay for Life Event',
+      alt: 'Relay for Life Event',
+    },
+    {
+      img: `${basePath}assets/juniors-2.JPG`,
+      caption: 'Juniors',
+      alt: 'Juniors',
     },
     {
       img: `${basePath}assets/curracloe-1.jpg`,
@@ -19,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
       alt: 'Curracloe Beach',
     },
     {
-      img: `${basePath}assets/darkness-into-light.jpg`,
-      caption: 'Darkness into Light Event 2026',
-      alt: 'Darkness into Light Event 2026',
+      img: `${basePath}assets/rowing-1.JPG`,
+      caption: 'Killurin Bridge',
+      alt: 'Killurin Bridge',
     },
   ];
 

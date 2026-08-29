@@ -527,13 +527,13 @@ a {
   /* Increased min from 220px to 350px, fluid rate to 45vw, and max to 600px */
   height: clamp(350px, 45vw, 600px);
 
-  background-image: url(../assets/darkness-into-light.jpg);
+  background-image: url(../assets/rowing-4.JPG);
   background-size: cover;
   background-color: rgb(26, 20, 24);
   position: relative;
   max-width: 1280px;
   background-position: center center;
-  margin: 0px auto;
+  margin: 0 auto;
   transition: background-image 0.8s ease-in-out;
 }
 .hero__strip-caption {
