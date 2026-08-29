@@ -2031,6 +2031,13 @@ a {
   .results-table td:first-child {
     width: auto;
   }
+  .brand__mark {
+    width: 50px;
+    height: 50px;
+  }
+  .site-header__inner {
+    padding: 14px 10px;
+  }
 }
 
 /* Article tags / footer */
