@@ -798,6 +798,10 @@ a {
   background: var(--crc-ink-900);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .news-card__media img {
   width: 100%;
