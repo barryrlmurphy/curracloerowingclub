@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alt: 'RowRox 💪',
     },
     {
-      img: `${basePath}assets/junior-camp-3.JPG`,
+      img: `${basePath}assets/junior-camp-3.jpg`,
       caption: 'Juniors 🚣',
       alt: 'Juniors 🚣',
     },
