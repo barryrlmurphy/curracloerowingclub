@@ -96,7 +96,7 @@
       const email = (data.get('email') || '').toString().trim();
       const message = (data.get('message') || '').toString().trim();
 
-      if (!name || !isEmail(email) || message.length < 8) {
+      if (!name || !isEmail(email) || message.length < 1) {
         msg.innerHTML =
           '<strong>Hold on</strong>Please complete every field, at least a few words in your message.';
         msg.style.borderLeftColor = 'var(--crc-danger)';
